@@ -11,7 +11,7 @@ function App() {
       <h1> RGM Planner App</h1>
       <ActionButton />
       <br />
-      <br />
+
       <ManageGrowthPlanner />
     </CssVarsProvider>
   );
