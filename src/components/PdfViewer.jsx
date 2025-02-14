@@ -4,7 +4,7 @@ const PdfViewer = ({ s3PresignedUrl }) => {
 	const [pdfSrc, setPdfSrc] = useState('');
 
 	useEffect(() => {
-		let blobUrl = null; // To store the generated Blob URL
+		let blobUrl = null;
 
 		const loadPdf = async () => {
 			try {
@@ -22,13 +22,12 @@ const PdfViewer = ({ s3PresignedUrl }) => {
 
 		loadPdf();
 
-		// Cleanup function to revoke Blob URL when component unmounts or URL changes
 		return () => {
 			if (blobUrl) {
 				URL.revokeObjectURL(blobUrl);
 			}
 		};
-	}, [s3PresignedUrl]); // ✅ Only depends on `s3PresignedUrl`, NOT `pdfSrc`
+	}, [s3PresignedUrl]);
 
 	return (
 		<div>
