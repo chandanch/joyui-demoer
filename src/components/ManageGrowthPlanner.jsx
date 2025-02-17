@@ -6,6 +6,7 @@ import FormLabel from '@mui/joy/FormLabel';
 import Input from '@mui/joy/Input';
 import Button from '@mui/joy/Button';
 import Link from '@mui/joy/Link';
+import Chip from '@mui/joy/Chip';
 
 function ManageGrowthPlanner() {
 	return (
@@ -68,6 +69,9 @@ function ManageGrowthPlanner() {
 			>
 				Custom Datasets?
 			</Typography>
+			<Chip color="primary" variant="solid">
+				Catalog Dataset
+			</Chip>
 		</Sheet>
 	);
 }
