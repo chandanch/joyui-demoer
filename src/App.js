@@ -14,7 +14,7 @@ function App() {
 			<br />
 
 			<ManageGrowthPlanner />
-			<PdfViewer s3PresignedUrl={process.env.REACT_APP_DOC_URL} />
+			{/* <PdfViewer s3PresignedUrl={process.env.REACT_APP_DOC_URL} /> */}
 		</CssVarsProvider>
 	);
 }

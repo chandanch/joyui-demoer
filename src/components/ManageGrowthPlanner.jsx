@@ -52,26 +52,23 @@ function ManageGrowthPlanner() {
 				/>
 			</FormControl>
 			<FormControl>
-				<FormLabel>
-					Field Observations
-					<Input
-						type="text"
-						name="observation"
-						placeholder="Add observations"
-					/>
-				</FormLabel>
+				<FormLabel>Field Observations </FormLabel>
+				<Input
+					type="text"
+					name="observation"
+					placeholder="Add observations"
+				/>
 			</FormControl>
 			<Button sx={{ mt: 1 /* margin top */ }}>Create Plan!</Button>
 			<Typography
-				endDecorator={<Link href="/sign-up">Link Datasets here</Link>}
+				endDecorator={<Link href="/upload">Link Datasets here</Link>}
 				fontSize="sm"
 				sx={{ alignSelf: 'center' }}
 			>
-				Custom Datasets?
+				<Chip color="primary" variant="solid">
+					Custom Datasets?
+				</Chip>
 			</Typography>
-			<Chip color="primary" variant="solid">
-				Catalog Dataset
-			</Chip>
 		</Sheet>
 	);
 }
