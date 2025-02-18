@@ -6,6 +6,7 @@ import FormLabel from '@mui/joy/FormLabel';
 import Input from '@mui/joy/Input';
 import Button from '@mui/joy/Button';
 import Link from '@mui/joy/Link';
+import Chip from '@mui/joy/Chip';
 
 function ManageGrowthPlanner() {
 	return (
@@ -26,9 +27,10 @@ function ManageGrowthPlanner() {
 		>
 			<div>
 				<Typography
-					level="h2"
+					level="h4"
 					sx={{ textAlign: 'center' }}
-					component={'h2'}
+					component={'h4'}
+					color="primary"
 				>
 					Create Growth Planner
 				</Typography>
@@ -51,22 +53,22 @@ function ManageGrowthPlanner() {
 				/>
 			</FormControl>
 			<FormControl>
-				<FormLabel>
-					Field Observations
-					<Input
-						type="text"
-						name="observation"
-						placeholder="Add observations"
-					/>
-				</FormLabel>
+				<FormLabel>Field Observations </FormLabel>
+				<Input
+					type="text"
+					name="observation"
+					placeholder="Add observations"
+				/>
 			</FormControl>
 			<Button sx={{ mt: 1 /* margin top */ }}>Create Plan!</Button>
 			<Typography
-				endDecorator={<Link href="/sign-up">Link Datasets here</Link>}
+				endDecorator={<Link href="/upload">Link Datasets here</Link>}
 				fontSize="sm"
 				sx={{ alignSelf: 'center' }}
 			>
-				Custom Datasets?
+				<Chip color="primary" variant="solid">
+					Custom Datasets?
+				</Chip>
 			</Typography>
 		</Sheet>
 	);
