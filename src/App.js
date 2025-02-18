@@ -4,6 +4,7 @@ import Typography from '@mui/joy/Typography';
 
 import ManageGrowthPlanner from './components/ManageGrowthPlanner';
 import { Divider } from '@mui/joy';
+import PlannerReport from './components/reports/PlannerReport';
 // import PdfViewer from './components/PdfViewer';
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
 
 			<ManageGrowthPlanner />
 			{/* <PdfViewer s3PresignedUrl={process.env.REACT_APP_DOC_URL} /> */}
+			<br />
+			<PlannerReport />
 		</CssVarsProvider>
 	);
 }
