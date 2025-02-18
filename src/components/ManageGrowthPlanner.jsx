@@ -27,9 +27,10 @@ function ManageGrowthPlanner() {
 		>
 			<div>
 				<Typography
-					level="h2"
+					level="h4"
 					sx={{ textAlign: 'center' }}
-					component={'h2'}
+					component={'h4'}
+					color="primary"
 				>
 					Create Growth Planner
 				</Typography>

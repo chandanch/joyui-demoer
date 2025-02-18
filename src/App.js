@@ -1,16 +1,25 @@
 import React from 'react';
 import { CssVarsProvider } from '@mui/joy/styles';
+import Typography from '@mui/joy/Typography';
 
-import ActionButton from './components/ActionButton';
 import ManageGrowthPlanner from './components/ManageGrowthPlanner';
-import PdfViewer from './components/PdfViewer';
+import { Divider } from '@mui/joy';
+// import PdfViewer from './components/PdfViewer';
 
 function App() {
-	console.log(process.env.REACT_APP_DOC_URL);
 	return (
 		<CssVarsProvider>
-			<h1> RGM Planner App</h1>
-			<ActionButton />
+			<Typography
+				level="h3"
+				sx={{ textAlign: 'center' }}
+				component={'h3'}
+				color="primary"
+			>
+				RGM Planner App
+			</Typography>
+			<Divider orientation="horizontal" />
+			<br />
+
 			<br />
 
 			<ManageGrowthPlanner />
