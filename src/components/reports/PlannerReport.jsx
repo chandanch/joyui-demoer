@@ -24,7 +24,7 @@ function PlannerReport() {
 			sx={{ flexGrow: 1 }}
 			flexDirection={'column'}
 		>
-			<Grid size={3}>
+			<Grid size={6}>
 				<Table aria-label="basic table">
 					<thead>
 						<tr>
@@ -74,7 +74,7 @@ function PlannerReport() {
 					</tbody>
 				</Table>
 			</Grid>
-			<Grid size={3}></Grid>
+			<Grid size={6}></Grid>
 		</Grid>
 	);
 }
