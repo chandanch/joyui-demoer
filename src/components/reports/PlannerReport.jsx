@@ -16,7 +16,7 @@ function PlannerReport() {
 					<thead>
 						<tr>
 							<th style={{ width: '40%' }}>Filament</th>
-							<th>Growth Sprout</th>
+							<th>Growth SP</th>
 							<th>Deviation</th>
 							<th>Distribution</th>
 							<th>Linear Value</th>

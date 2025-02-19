@@ -19,13 +19,17 @@ function App() {
 				RGM Planner App
 			</Typography>
 			<Divider orientation="horizontal" />
-			<br />
-
-			<br />
 
 			<ManageGrowthPlanner />
 			{/* <PdfViewer s3PresignedUrl={process.env.REACT_APP_DOC_URL} /> */}
-			<br />
+			<Typography
+				level="h4"
+				sx={{ textAlign: 'center' }}
+				component={'h4'}
+				color="primary"
+			>
+				Planner Report
+			</Typography>
 			<PlannerReport />
 		</CssVarsProvider>
 	);
