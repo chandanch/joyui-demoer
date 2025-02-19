@@ -1,35 +1,22 @@
 import React from 'react';
 import Grid from '@mui/joy/Grid';
-import { styled } from '@mui/joy/styles';
-import Sheet from '@mui/joy/Sheet';
-import Table from '@mui/joy/Table';
 
-const Item = styled(Sheet)(({ theme }) => ({
-	backgroundColor: '#fff',
-	...theme.typography['body-sm'],
-	padding: theme.spacing(1),
-	textAlign: 'center',
-	borderRadius: 4,
-	color: theme.vars.palette.text.secondary,
-	...theme.applyStyles('dark', {
-		backgroundColor: theme.palette.background.level1,
-	}),
-}));
+import Table from '@mui/joy/Table';
+import { CombinedPlanReport } from './CombinedPlanReport';
 
 function PlannerReport() {
 	return (
 		<Grid
 			container
 			spacing={2}
-			sx={{ flexGrow: 1 }}
-			flexDirection={'column'}
+			sx={{ display: 'flex', flexDirection: 'row' }}
 		>
-			<Grid size={3}>
+			<Grid xs={6}>
 				<Table aria-label="basic table">
 					<thead>
 						<tr>
 							<th style={{ width: '40%' }}>Filament</th>
-							<th>Growth Sprout</th>
+							<th>Growth SP</th>
 							<th>Deviation</th>
 							<th>Distribution</th>
 							<th>Linear Value</th>
@@ -74,7 +61,9 @@ function PlannerReport() {
 					</tbody>
 				</Table>
 			</Grid>
-			<Grid size={3}></Grid>
+			<Grid xs={6}>
+				<CombinedPlanReport />
+			</Grid>
 		</Grid>
 	);
 }
